@@ -4,16 +4,15 @@ class Main() {
         fun main(args: Array<String>) {
             var curIndexA = 0
             var pemainPertama: String
-            do {
                 println("pemain pertama pilih, batu, gunting, kertas :")
 
                 var inputA = readLine().toString()
                 pemainPertama = inputA
                 curIndexA++
-            } while (curIndexA < 1)
+
 
             var pemainKedua: String
-            println("pemain pertama pilih, batu, gunting, kertas :")
+            println("pemain kedua pilih, batu, gunting, kertas :")
 
             var inputB = readLine().toString()
             pemainKedua = inputB
