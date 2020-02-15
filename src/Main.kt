@@ -6,7 +6,7 @@ class Main() {
             println("==GameSuit Terminal Version==")
             println("=============================")
 
-            println("Pemain 1 Masukan Nama: ")
+            println("Pemain 1 Masukan Nama:  ")
             var pemain1 = readLine()!!.toString()
             println("Pemain 1 adalah $pemain1")
             println("=============================")
