@@ -1,5 +1,5 @@
 class Controller() {
-    fun mekanikGame(pemainPertama: String, pemainKedua: String, listener: CallBack) {
+    fun mekanikGame(pemain1:String, pemain2:String, pemainPertama: String, pemainKedua: String, listener: CallBack) {
         var hasil = String
         if (pemainPertama.equals("batu", ignoreCase = true) && pemainKedua.equals("gunting", ignoreCase = true)
             || pemainPertama.equals("gunting", ignoreCase = true) && pemainKedua.equals(
@@ -11,7 +11,7 @@ class Controller() {
                 ignoreCase = true
             )
         ) {
-            println("pemain pertama menang")
+            println("$pemain1 menang")
         } else if (pemainKedua.equals("batu", ignoreCase = true) && pemainPertama.equals(
                 "gunting",
                 ignoreCase = true
@@ -25,7 +25,7 @@ class Controller() {
                 ignoreCase = true
             )
         ) {
-            println("pemain kedua menang")
+            println("$pemain2 menang")
         } else {
             println("Seri")
         }
