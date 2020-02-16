@@ -13,7 +13,7 @@ class Controller() {
                 println("$pemain2 menang")
 
 
-            } else {
+            } else {pemainPertama == pemainKedua
                 println("Seri")
             }
     }
