@@ -2,7 +2,7 @@ class Main() {
     companion object : CallBack {
         @JvmStatic
         fun main(args: Array<String>) {
-            println("=============================")
+           do{ println("=============================")
             println("==GameSuit Terminal Version==")
             println("=============================")
             println("Menu ")
@@ -10,7 +10,7 @@ class Main() {
             println("2. Exit")
             print("Masukan Pilihan: ")
             var input = readLine()!!.toInt()
-
+            var mainLagi: String
 
             when (input) {
                 1 -> {
@@ -39,6 +39,7 @@ class Main() {
                         println("Main lagi? (Y/N): ")
                         print("Masukan Pilihan: ")
                         var mainLagi = readLine().toString().toLowerCase()
+                        
                     } while (mainLagi == "y")
                 }
 
@@ -46,7 +47,7 @@ class Main() {
                 }
             }
 
-        }
+        }while (input!= 2)}
 
 
         override fun nilaiBalik(hasil: String) {
